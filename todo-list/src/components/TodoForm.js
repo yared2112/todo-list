@@ -10,10 +10,10 @@ const handleChange = e => {
 const handleSubmit = e => {
     e.preventDefault()
 
-   // props.onSubmit({
-   //     id: Math.floor(Math.random() * 10000),
-   //     text: input
-   // });
+    props.onSubmit({
+        id: Math.floor(Math.random() * 10000),
+        text: input
+    })
 
     setInput('')
 }

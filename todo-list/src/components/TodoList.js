@@ -12,13 +12,13 @@ function TodoList() {
         const newTodos = [todos, ...todos]
 
         setTodos(newTodos)
-        console.log(...todos)
+        console.log(todo, ...todos)
     }
 
   return (
     <div>
         <h1>What is the plan for today</h1>
-        <TodoForm />
+        <TodoForm onSubmit={addTodo} />
     </div>
   )
 }
